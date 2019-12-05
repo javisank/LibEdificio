@@ -1,6 +1,6 @@
 /*
-  LibEdificio.cpp - Libreria para el manejo de la 
-  estacion del cruce de calles con semaforos.
+  LibEdificio.h - Libreria para el manejo de la 
+  estacion de las luces del Edificio.
   Javier Sankowicz.
 */
 
