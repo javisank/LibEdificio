@@ -9,15 +9,11 @@
 
 #include "Arduino.h"
 
-#define ACTIVADO HIGH
-#define DESACTIVADO LOW
-
 #define PRESIONADO HIGH
 #define NO_PRESIONADO LOW
 
-#define DIA HIGH
-#define NOCHE LOW
-
+#define NOCHE 0
+#define DIA 1
 
 #define REPETIR(X) for(int i=0;i<X;i++)
 
@@ -30,9 +26,24 @@ const int pin_piso6 = 7;
 const int pin_piso7 = 8;
 const int pin_piso8 = 9;
 
-const int pin_sensor_ldr = 10;
-//const int sensor_pir = 11;
 const int pin_pulsador = 11;
+const int pin_sensor_ldr = 10;
+
+extern void mostrar_cartel(String);
+extern void mostrar_numero(int num);
+extern int ingresar_numero();
+extern void inicializar_sistema();
+extern void finalizar();
+
+
+//Variables para manejo de sensores y pulsadores
+extern int estado_sensor_luz;
+extern int estado_pulsador;
+extern int numero_ingresado;
+
+//Variable Contador
+extern int contador;
+
 
 class LuzPiso {
 	public:
@@ -65,19 +76,6 @@ class Pulsador
 };
 
 
-extern void mostrar_cartel(String);
-extern void mostrar_numero(int num);
-extern int ingresar_numero();
-extern void inicializar_sistema();
-extern void finalizar();
-
-//Variables para manejo de sensores y pulsadores
-extern int estado_sensor_luz;
-extern int estado_pulsador;
-extern int numero_ingresado;
-
-//Variable Contador
-extern int contador;
 
 //Variables elementos del sistema
 extern LuzPiso piso1;
