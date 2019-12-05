@@ -1,6 +1,6 @@
 /*
   LibEdificio.h - Libreria para el manejo de la 
-  estacion del cruce de calles con semaforos.
+  estacion de las luces del Edificio.
   Javier Sankowicz.
 */
 
@@ -93,4 +93,3 @@ extern Pulsador pulsador;
 
 
 #endif
-
