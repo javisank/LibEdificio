@@ -138,6 +138,7 @@ LuzPiso piso5(pin_piso5);
 LuzPiso piso6(pin_piso6);
 LuzPiso piso7(pin_piso7);
 LuzPiso piso8(pin_piso8);
+LuzPiso helipuerto(pin_helipuerto);
 
 Sensor sensor_luz(pin_sensor_ldr);
 

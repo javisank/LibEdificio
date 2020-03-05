@@ -25,6 +25,7 @@ const int pin_piso5 = 6;
 const int pin_piso6 = 7;
 const int pin_piso7 = 8;
 const int pin_piso8 = 9;
+const int pin_helipuerto = 12;
 
 const int pin_pulsador = 11;
 const int pin_sensor_ldr = 10;
@@ -86,6 +87,7 @@ extern LuzPiso piso5;
 extern LuzPiso piso6;
 extern LuzPiso piso7;
 extern LuzPiso piso8;
+extern LuzPiso helipuerto;
 
 extern Sensor sensor_luz;
 
